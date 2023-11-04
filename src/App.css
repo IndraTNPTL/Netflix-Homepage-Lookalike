@@ -90,11 +90,19 @@ footer p {
 }
 
 @media (max-width: 800px) {
-  header {
-    justify-content: center;
+  .container {
+    padding: 2rem 2rem;
   }
 
   .logo {
     height: 3.7rem;
+  }
+
+  footer {
+    justify-content: center;
+  }
+
+  footer p {
+    font-size: 0.6rem;
   }
 }

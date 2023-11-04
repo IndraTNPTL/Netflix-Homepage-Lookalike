@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Poppins", sans-serif;
+  --header-height: 9rem;
+  --footer-height: 3rem;
+  /* --main-height: calc(100vh - var(--header-height) - var(--footer-height)); */
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #121212;
+}
+
+.logo {
+  height: 4rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.02rem;
+}
+
+.container {
+  padding: 2rem 3rem;
+  display: flex;
+}
+
+header {
+  height: var(--header-height);
+  align-items: center;
+}
+
+main {
+  color: white;
+}
+
+.categories-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  gap: 3.3rem;
+  padding-left: 0.4rem;
+}
+
+.category-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+}
+
+.img-container {
+  overflow: hidden;
+  overflow-x: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.img-container li {
+  cursor: pointer;
+}
+
+.img-container img {
+  height: 9rem;
+  border-radius: 4px;
+}
+
+.category-container ul {
+  display: flex;
+  gap: 0.5rem;
+}
+
+footer {
+  /* border: 1px solid red; */
+  height: var(--footer-height);
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  font-size: 0.8rem;
+}
+
+@media (max-width: 800px) {
+  header {
+    justify-content: center;
+  }
+
+  .logo {
+    height: 3.7rem;
+  }
+}
